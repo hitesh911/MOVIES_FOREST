@@ -39,9 +39,12 @@ def forest_movies(request):
     # declaring a content for first page
     content_start = 0
     content_end = 9
-
     # checking the request
     if request.method == "POST":
+        temp_query = Post.objects.all()
+        for post_tems in temp_query.iterator():
+            post_tems.other_download_links = "{}"
+            post_tems.save()
         # if request is post don't show back_home_button
         back_home_button = False
         # checking for which section user send a request
@@ -447,11 +450,6 @@ def update_posts(request):
                     update_success = True
                 elif column.lower() == "content":
                     real_post.content = content
-                    update_success = True
-                elif column.lower() == "download_links":
-                    real_post.download_links = content
-                elif column.lower() == "other_download_links":
-                    real_post.other_download_links = content
                     update_success = True
                 elif column.lower() == "trailer_link":
                     real_post.trailer_link = content
