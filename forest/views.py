@@ -40,6 +40,7 @@ def forest_movies(request):
     content_start = 0
     content_end = 9
     # checking the request
+    if request.method == "POST":
         # if request is post don't show back_home_button
         back_home_button = False
         # checking for which section user send a request
