@@ -55,7 +55,7 @@ WEBPUSH_SETTINGS = {
     "VAPID_ADMIN_EMAIL": "gamingbomb911@gmail.com"
 }
 
-SITE_ID = 1
+SITE_ID = 2
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
