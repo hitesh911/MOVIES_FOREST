@@ -1,5 +1,5 @@
 # MOVIES_FOREST
-This project has improved version [movies forest](https://github.com/hitesh911/modified_moviesforest)
+This project has improved version [movies forest](https://github.com/hitesh911/modified-moviesforest)
 ## Introduction
 
 The goal of this project is to provide  django project template with many added features that everyone can use.
