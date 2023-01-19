@@ -38,7 +38,7 @@ If your project is already in an existing python3 virtualenv first install djang
 And then run the `django-admin.py` command to start the new project:
 
     $ django-admin.py startproject \
-      --template=https://github.com/hitesh911/modified-moviesforest \
+      --template=https://github.com/hitesh911/movies_forest \
       --extension=py,md \
       <project_name>
       
